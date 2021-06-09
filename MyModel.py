@@ -8,6 +8,8 @@ from sklearn.preprocessing import LabelEncoder
 # import xgboost as xgb
 from sklearn.ensemble import GradientBoostingClassifier
 import pickle
+import warnings
+warnings.filterwarnings('ignore')
 # Reading the train data set
 df1 = pd.read_csv('train_s3TEQDk.csv')
 df2 = df1.drop('ID', axis=1)
