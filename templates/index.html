@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Credit card lead predictor</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+    <div class="login">
+	    <h1>Predict whether a customer is Lead for Credit card or no </h1>
+        <!-- Main Input to our ML model -->
+        <form action="{{ url_for('predict')}}"method="post">
+            <label for="Gender">Gender:</label>
+            <input type ="radio" id = "Male" name="Gender" value = "Male">
+            <label for="Male">Male</label>
+            <input type ="radio" id = "Female" name="Gender" value = "Female">
+            <label for="Female">Female</label> <br><br><br>
+
+            <label for="Age">Age:</label>
+            <input type = "number" name = "Age" placeholder="Please input age" required = "required" /><br><br><br>
+
+            <label for="Region Code">Region Code:</label>
+            <select name="Region Code" id = "Region Code">
+                <option value = "RG250">RG250</option>
+                <option value = "RG251">RG251</option>
+                <option value = "RG252">RG252</option>
+                <option value = "RG253">RG253</option>
+                <option value = "RG254">RG254</option>
+                <option value = "RG255">RG255</option>
+                <option value = "RG256">RG256</option>
+                <option value = "RG257">RG257</option>
+                <option value = "RG258">RG258</option>
+                <option value = "RG259">RG259</option>
+                <option value = "RG260">RG260</option>
+                <option value = "RG261">RG261</option>
+                <option value = "RG262">RG262</option>
+                <option value = "RG263">RG263</option>
+                <option value = "RG264">RG264</option>
+                <option value = "RG265">RG265</option>
+                <option value = "RG266">RG266</option>
+                <option value = "RG267">RG267</option>
+                <option value = "RG268">RG268</option>
+                <option value = "RG269">RG269</option>
+                <option value = "RG270">RG270</option>
+                <option value = "RG271">RG271</option>
+                <option value = "RG272">RG272</option>
+                <option value = "RG273">RG273</option>
+                <option value = "RG274">RG274</option>
+                <option value = "RG275">RG275</option>
+                <option value = "RG276">RG276</option>
+                <option value = "RG277">RG277</option>
+                <option value = "RG278">RG278</option>
+                <option value = "RG279">RG279</option>
+                <option value = "RG280">RG280</option>
+                <option value = "RG281">RG281</option>
+                <option value = "RG282">RG282</option>
+                <option value = "RG283">RG283</option>
+                <option value = "RG284">RG284</option>
+            </select><br><br><br>
+
+            <label for="Occupation">Occupation:</label>
+            <select name = "Occupation" id="Occupation">
+                <option value = "Salaried">Salaried</option>
+                <option value = "Self-Employed">Self Employed</option>
+                <option value = "Entrepreneur">Entrepreneur</option>
+                <option value = "Other">Other</option>
+            </select><br><br><br>
+
+            <label for = "Channel Code">Channel Code:</label>
+            <select name = "Channel Code" id="Channel Code">
+                <option value = "X1">X1</option>
+                <option value = "X2">X2</option>
+                <option value = "X3">X3</option>
+                <option value = "X4">X4</option>
+            </select><br><br><br>
+
+            <label for="Vinatage">Vintage period in months:</label>
+            <input type = "number" name = "Vintage period in months" placeholder="input vintage period" required = "required" /><br><br><br>
+
+            <label for="Credit Product">Having any Credit Product ?:</label>
+            <input type ="radio" id = "Yes" name="Having any Credit Product ?" value = "Yes">
+            <label for="Yes">Yes</label>
+            <input type ="radio" id = "No" name="Having any Credit Product ?" value = "No">
+            <label for="No">No</label>
+            <input type = "radio" id = "Not Known" name="Having any Credit Product ?" value = "Not Known">
+            <label for="Not Known">Not Known</label>
+            </label><br><br><br>
+
+            <label for="Average Account Balance">Average Account Balance:</label>
+            <input type = "number" name = "Average Account Balance" placeholder="input Average balance" required = "required" /><br><br><br>
+
+            <label for="Is Active">If the Customer is Active in last 3 Months ?:</label>
+            <input type ="radio" id = "True" name="If the Customer is Active in last 3 Months ?" value = "True">
+            <label for="True">True</label>
+            <input type ="radio" id = "False" name="If the Customer is Active in last 3 Months ?" value = "False">
+            <label for="False">False</label><br><br><br>
+
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
+
+        {{ prediction_text }}
+
+    </div>
+</body>
+</html>
