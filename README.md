@@ -9,7 +9,7 @@ After building the model, first I deployed it in my local system using flask fra
 
 `Brief Description`:
 
-<u>Problem Statement:</u> 
+<ins>Problem Statement:</ins> 
 
 Happy Customer Bank is a mid-sized private bank that deals in all kinds of banking products, like Savings accounts, Current accounts, investment products, credit products, among other offerings.
 
