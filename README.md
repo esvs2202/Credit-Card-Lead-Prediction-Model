@@ -3,7 +3,7 @@ Hello all 😊,
 
 This is one of my personal projects in my Data Science journey and the data source:- https://www.kaggle.com/sajidhussain3/jobathon-may-2021-credit-card-lead-prediction?select=train.csv and conducted this as a job a thon by Analytics Vidhya during May 2021.- https://datahack.analyticsvidhya.com/contest/job-a-thon-2/#MySubmissions
 
-I build a classification model to predict whether a particular bank customer is a lead for offering him/her a credit card or no, using Gradient Boosting Classifier algorithm. Achieved training accuracy as 0.8050 and validation accuracy as 0.8036.
+I built a classification model to predict whether a particular bank customer is a lead for offering him/her a credit card or no, using Gradient Boosting Classifier algorithm. Achieved training accuracy as 0.8050 and validation accuracy as 0.8036.
 
 After building the model, first I deployed it in my local system using flask framework and then deployed in Heroku ( a PaaS ) using gunicorn (a python Web Server Gateway Interface (WSGI) HTTP server).
 
