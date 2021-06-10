@@ -7,9 +7,11 @@ I build a classification model to predict whether a particular bank customer is 
 
 After building the model, first I deployed it in my local system using flask framework and then deployed in Heroku ( a PaaS ) using gunicorn (a python Web Server Gateway Interface (WSGI) HTTP server).
 
-Brief Description:
+`Brief Description`:
 
-`Problem Statement`: Happy Customer Bank is a mid-sized private bank that deals in all kinds of banking products, like Savings accounts, Current accounts, investment products, credit products, among other offerings.
+<u>Problem Statement:</u> 
+
+Happy Customer Bank is a mid-sized private bank that deals in all kinds of banking products, like Savings accounts, Current accounts, investment products, credit products, among other offerings.
 
 The bank also cross-sells products to its existing customers and to do so they use different kinds of communication like tele-calling, e-mails, recommendations on net banking, mobile banking, etc. 
 
