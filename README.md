@@ -24,25 +24,25 @@ Now, the bank is looking for your help in identifying customers that could show 
 
 <ins>Solution steps I followed:</ins>
 
-1. Loaded the data set in Jupyter note book and did data cleaning as follows:
-    a) Imputed missing values in "Credit_Product" with "Not Known", which indicates that there's no information w.r.t. a customer having any credit product or no.
-    b) Ignored "ID" column as it is not useful for our analysis.
-    c) Visualized our target column "Is_Lead" and found that there was a class imbalance. To resolve this issue, I used "resample" module from sklean.utils and performed                  resampling operation thus making our data unbiased.
-    d) Next, I converted all the 6 categorical columns to numerical columns using "LabelEncoder" module from sklearn.preprocessing.
-    e) Then, 70% of data set is split into training set while the remaining 30% into testing set.
-    f) Next, except the columns having binary values, scaled all the other columns using a "MinMaxScaler" from sklearn.preprocessing, making our data ready for model building.
+1. Loaded the data set in Jupyter note book and did data cleaning as follows:<br>
+    a) Imputed missing values in "Credit_Product" with "Not Known", which indicates that there's no information w.r.t. a customer having any credit product or no.<br>
+    b) Ignored "ID" column as it is not useful for our analysis.<br>
+    c) Visualized our target column "Is_Lead" and found that there was a class imbalance. To resolve this issue, I used "resample" module from sklean.utils and performed                  resampling operation thus making our data unbiased.<br>
+    d) Next, I converted all the 6 categorical columns to numerical columns using "LabelEncoder" module from sklearn.preprocessing.<br>
+    e) Then, 70% of data set is split into training set while the remaining 30% into testing set.<br>
+    f) Next, except the columns having binary values, scaled all the other columns using a "MinMaxScaler" from sklearn.preprocessing, making our data ready for model building.<br>
 
-2. Experimented with various Machine learning algorithms (all with default parameters) :
-   a) Logistic regression - training accuracy: 0.7107 & validation accuracy: 0.7103
-   b) Random Forest Classifier - training accuracy: 0.7810 & validation accuracy: 0.7785
-   c) AdaBoost Classifier - training accuracy: 0.7967 & validation accuracy: 0.7954
-   d) Gradient Boosting Classifier - training accuracy: 0.8050 & validation accuracy: 0.8036
-   e) XGBoost Classifier - training accuracy: 0.8211 & validation accuracy: 0.8117.
+2. Experimented with various Machine learning algorithms (all with default parameters) :<br>
+   a) Logistic regression - training accuracy: 0.7107 & validation accuracy: 0.7103<br>
+   b) Random Forest Classifier - training accuracy: 0.7810 & validation accuracy: 0.7785<br>
+   c) AdaBoost Classifier - training accuracy: 0.7967 & validation accuracy: 0.7954<br>
+   d) Gradient Boosting Classifier - training accuracy: 0.8050 & validation accuracy: 0.8036<br>
+   e) XGBoost Classifier - training accuracy: 0.8211 & validation accuracy: 0.8117.<br>
    
-   From all the above 5 algorithms, I chose Gradient boosting classifier algorithm for building the application because the XGBoost classifer caused a trouble in my PyCharm        resulting in hanging 😂, otherwise it is a best one to go. 
+   From all the above 5 algorithms, I chose Gradient boosting classifier algorithm for building the application because the XGBoost classifer caused a trouble in my PyCharm        resulting in hanging 😂, otherwise it is a best one to go. <br>
 
-3. Next, I created a flask application and integrated my front-end html file and the model file which was stored in my local disk using pickel module.
+3. Next, I created a flask application and integrated my front-end html file and the model file which was stored in my local disk using pickel module.<br>
 
-4. Then deployed in Heroku and ran using gunicorn module. 
+4. Then deployed in Heroku and ran using gunicorn module.<br> 
 
 
