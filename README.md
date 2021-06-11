@@ -41,7 +41,7 @@ Now, the bank is looking for your help in identifying customers that could show 
    
    From all the above 5 algorithms, I chose Gradient boosting classifier algorithm for building the application because the XGBoost classifer caused a trouble in my PyCharm        resulting in hanging 😂, otherwise it is a best one to go. <br>
 
-3. Next, I created a flask application and integrated my front-end html file and the model file which was stored in my local disk using pickel module.<br>
+3. Next, I created a flask application and integrated my front-end html file and the model file which was stored in my local disk using pickle module.<br>
 
 4. Then deployed in Heroku and ran using gunicorn module. link to the web application:- https://credit-card-lead-prediction.herokuapp.com/  <br> 
 
