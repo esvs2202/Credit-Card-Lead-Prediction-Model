@@ -27,7 +27,7 @@ Now, the bank is looking for your help in identifying customers that could show 
 1. Loaded the data set in Jupyter note book and did data cleaning as follows:<br>
     a) Imputed missing values in "Credit_Product" with "Not Known", which indicates that there's no information w.r.t. a customer having any credit product or no.<br>
     b) Ignored "ID" column as it is not useful for our analysis.<br>
-    c) Visualized our target column "Is_Lead" and found that there was a class imbalance. To resolve this issue, I used "resample" module from sklean.utils and performed                  resampling operation thus making our data unbiased.<br>
+    c) Visualized our target column "Is_Lead" and found that there was a class imbalance. To resolve this issue, I used "resample" module from sklearn.utils and performed                  resampling operation thus making our data unbiased.<br>
     d) Next, I converted all the 6 categorical columns to numerical columns using "LabelEncoder" module from sklearn.preprocessing.<br>
     e) Then, 70% of data set is split into training set while the remaining 30% into testing set.<br>
     f) Next, except the columns having binary values, scaled all the other columns using a "MinMaxScaler" from sklearn.preprocessing, making our data ready for model building.<br>
